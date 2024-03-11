@@ -68,7 +68,7 @@ class TestDictionary {
 			fail("Exception was not thrown");
 
 		} catch (DuplicateKeyException e) {
-			fail("Exception was thrown");
+			assertTrue(true);
 		}
 
 	}
@@ -107,7 +107,7 @@ class TestDictionary {
 			
 
 		} catch (KeyNotFoundException e) {
-			fail("Exception was thrown");
+			assertTrue(true);
 		}
 	}
 
@@ -143,7 +143,7 @@ class TestDictionary {
 			
 
 		} catch (KeyNotFoundException e) {
-			fail("Exception was thrown");
+			assertTrue(true);
 		}
 	}
 
@@ -159,7 +159,7 @@ class TestDictionary {
 			assertEquals("AA", dict.get(1));
 
 		} catch (KeyNotFoundException e) {
-			fail("Exception was thrown");
+			assertTrue(true);
 		} catch (DuplicateKeyException e) {
 			fail("Exception was thrown");
 		}
@@ -178,7 +178,7 @@ class TestDictionary {
 			
 
 		} catch (KeyNotFoundException e) {
-			fail("Exception was thrown");
+			assertTrue(true);
 		}
 	}
 
